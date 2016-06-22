@@ -1,0 +1,229 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/boostrap-theme.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/bootstrap.js" crossorigin="anonymous"></script>
+	</head>
+	<body id="nut">
+		
+		<div class="nut-data-wrap">
+			<div class="nut-banner"></div>
+			<div class="nut-dat">
+				<div class="nut-head-one text-uppercase">Nutrition</div>
+				<div class="nut-head-two text-uppercase">for COPD patients</div>
+				<hr class="nut-hr">
+				<div class="nut-data">
+					<p>
+					Your body uses food as fuel for all of its activities. No single food will supply all the nutrients you need - a healthy diet has lots of variety. For patients with COPD and other chronic lung conditions, maintaining a healthy	lifestyle is the key for managing their condition	and improving symptoms. Moderate exercise along with following a healthy diet will help reduce the tenderness.
+					</p>
+					<div class="nut-left">
+						<img src="images/nutrition_1.png" height="150px" />
+						<h3 class="text-uppercase">Nutrition Concerns</h3>
+						<li>Malnutrition (lack of proper nutrition)</li>
+						<li>Weight gain or weight loss</li>
+						<li>Nutrient quality of food</li>
+						<li>Coping with COPD symptoms</li>
+					</div>
+					<div class="nut-right">
+						<img src="images/nutrition_2.png" height="150px" />
+						<h3 class="text-uppercase">Tips for eating</h3>
+						<li><a href="javascript:void(0);" onclick="$('#overlay').show();">DO'S</li>
+						<li><a href="javascript:void(0);" onclick="$('#overlay').show();">DONT'S</li>
+					</div>
+					<div class="nut-link">
+						<a href="javascript:void(0)" onclick="$('#nut-tip').show();">
+							<img src="images/nutrition_3.png"  />
+						</a>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<div class="nut-overlay" style="display:none;" id="nut-tip">
+			<div class="nutov-wrap">
+				<img src="images/nutrition_tips_1.png" height="140px" />
+				<div class="nutov-head-one text-uppercase">Take this COPD</div>
+				<div class="nutov-head-two text-uppercase">Nutri Tips</div>
+				<hr class="nutov-hr">
+				<div class="nutov-data">
+					<h4 class="text-uppercase">Are You</h4>
+					<a href="javascript:void(0);" onclick="$('#over-overlay').show();" ><img src="images/nutrition_tips_3.png" height="200px" /></a>
+					<a href="javascript:void(0);" onclick="$('#under-overlay').show();" ><img src="images/nutrition_tips_4.png"  height="200px"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav-wrap">
+			<a href="knowing-copd.html" class="main-nav main-1 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Knowing COPD</div>
+				</div>
+			</a>
+			<a href="signs-of-copd.html" class="main-nav main-2 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Signs of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-3 " href="causes-of-copd.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Causes of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-4" href="quiz.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Take a Quiz</div>
+				</div>
+			</a>
+			<a class="main-nav main-5 " href="treatment.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Treatment</div>
+				</div>
+			</a>
+			<a class="main-nav main-6 " href="exercise.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Exercise</div>
+				</div>
+			</a>
+			<a class="main-nav main-7 active" href="nutrition.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Nutrition</div>
+				</div>
+			</a>
+			<a class="main-nav main-8">
+				<div class="main-nav-data">
+					<div class="close-nav-icon"></div>
+					<div class="main-nav-text">Close</div>
+				</div>
+			</a>
+		</div>
+		<div id="overlay" class="overlay" style="display:none;">
+			<div class="pop-data">
+				<img src="images/tips_eating.png" />
+				<a href="javscript:void(0);" onclick="$('#overlay').hide();" class="pop-close" ></a>
+			</div>
+		</div>
+		<div id="under-overlay" class="overlay" style="display:none;">
+			<div class="under-pop-data">
+				<img src="images/under.png" />
+				<hr class="tip-hr">
+				<div class="tip-q">
+					<span class="tic-tac right " data-key="right"></span>
+					<span class="tic-tac wrong" data-key="wrong"></span>
+					<span class="text">Do you really feel tired with lack of energy throughout the day?</span>
+					<div class="helpful-tips right-text animated fadeIn" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Eat larger meals earlier in the day and small meals at night which is easy to digest.</li>
+   						<li>Prepare greater amounts of food when feeling good & freeze to eat later.</li>
+   						<li>Prepare simple and easy food items and take help of your family friends for food preparation.</li>
+					</div>
+					<div class="helpful-tips wrong-text animated fadeIn" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Try and maintain your dietary intake well.</li>
+					</div>
+				</div>
+				<div class="tip-q">
+					<span class="tic-tac right" data-key="right"></span>
+					<span class="tic-tac wrong " data-key="wrong"></span>
+					<span class="text">Do you feel a heavy stomach and bloated any time?</span>
+					<div class="helpful-tips right-text animated fadeIn" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Eat several small meals throughout day.</li>
+   						<li>Drink fluids 1 hour before or after meals.</li>
+   						<li>Avoid foods that cause gas and bloating	like cabbage, cauliflower, tur dal, watermelons, radish, chana, besan, beans and lentils, carrots, prunes and apricots.</li>
+   						<li>lncrease your fiber intake by eating more of fruits and vegetables to avoid constipation.</li>
+					</div>
+					<div class="helpful-tips wrong-text animated fadeIn" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Try and main tain your dietary intake well.</li>
+					</div>
+				</div>
+				
+			</div>
+			<a href="javscript:void(0);" onclick="$('#under-overlay').hide();$('.nut-overlay').hide();" class="tip-pop-close" ><img src="images/pop-close.png" height="72px" /></a>
+		</div>
+		<div id="over-overlay" class="overlay" style="display:none;">
+			<div class="under-pop-data">
+				<img src="images/over.png" />
+				<hr class="tip-hr">
+				<div class="tip-q">
+					<span class="tic-tac right " data-key="right"></span>
+					<span class="tic-tac wrong" data-key="wrong"></span>
+					<span class="text">Do you really feel tired and with lack of energy throughout the day?</span>
+					<div class="helpful-tips right-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Eat larger meals earlier in the day and small meals at night which is easy to digest.</li>
+   						<li>Prepare greater amounts of food when feeling good & freeze to eat later.</li>
+   						<li>Prepare simple and easy food items and take help of your family friends for food preparation.</li>
+					</div>
+					<div class="helpful-tips wrong-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Try and main tain your dietary intake well.</li>
+					</div>
+				</div>
+				<div class="tip-q">
+					<span class="tic-tac right" data-key="right"></span>
+					<span class="tic-tac wrong " data-key="wrong"></span>
+					<span class="text">Do you feel a heavy stomach and bloated any time?</span>
+					<div class="helpful-tips right-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Try not to rush meals and eat less fried and foods with high fat content.</li>
+   						<li> Eat several small meals throughout	day. Drink fluids 1 hour before or after meals.</li>
+   						<li>Avoid foods that cause gas and bloating	like cabbage, cauliflower, tur dal, watermelons, radish, chana, besan, beans and lentils, carrots, prunes and apricots.</li>
+					</div>
+					<div class="helpful-tips wrong-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Continue having small frequent meals to avoid bloating.</li>
+					</div>
+				</div>
+				<div class="tip-q">
+					<span class="tic-tac right " data-key="right"></span>
+					<span class="tic-tac wrong " data-key="wrong"></span>
+					<span class="text">Have you observed that you have put on weight in the past few months or post starting with the treatment?</span>
+					<div class="helpful-tips right-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li> Lose weight gradually and sensibly, consult your doctor or dietician.</li>
+   						<li> Become more active by doing daily exercise for 25 mins (could be twice a day).</li>
+   						<li>Eat nutrient-dense,	balanced diet.</li>
+   						<li>Monitor or record food intake on daily basis so as to lose weight.</li>
+					</div>
+					<div class="helpful-tips wrong-text" style="display:none">
+						<h3>Helpful tips</h3>
+						<li>Keep yourself physically active.</li>
+					</div>
+				</div>
+				
+			</div>
+			<a href="javscript:void(0);" onclick="$('#over-overlay').hide();$('.nut-overlay').hide();" class="tip-pop-close" ><img src="images/pop-close.png" height="72px;" /></a>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.tic-tac').on('click',function(){
+					$(this).siblings('.tic-tac').removeClass('selected');
+					$(this).addClass('selected');
+					$(this).parent('.tip-q').children('.tic-tac').removeClass('');
+					$(this).addClass('');
+					var key = $(this).data('key');
+					$(this).parent('.tip-q').children('.helpful-tips').hide();
+					$(this).parent('.tip-q').children('.'+key+'-text').show();
+				})
+			})
+		</script>
+	</body>
+</html>

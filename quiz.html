@@ -1,0 +1,204 @@
+
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/bootstrap-theme.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.q a').on('click',function(){
+					var key = $(this).data('key');
+					var num = $(this).data('num');
+					console.log(key+'**'+num);
+					$('.q-pop').removeClass('correct');
+					$('.q-pop').removeClass('incorrect');
+					$('#'+num).addClass(key);
+					$('#'+num+' h5').html(key);
+					$('#'+num).show();
+					$('#overlay').show();
+				})
+			})
+		</script>
+	</head>
+	<body id="quiz">
+		
+		<div class="quiz-data-wrap">
+			<div class="quiz-banner"></div>
+			<div class="quiz-dat">
+				<div class="quiz-head-one text-uppercase">How much do you know about</div>
+				<div class="quiz-head-two text-uppercase">COPD?</div>
+				<hr class="quiz-hr">
+				<div class="quiz-data">
+					<p>Take a quiz on the myths and facts of COPD<br />Click the correct answer</p>
+					<div class="q-wrap">
+						<div class="q">
+							<span>1. People suffering from COPD should never exercise regularly.</span>
+							<a href="javascript:void(0);" class="right" data-key="incorrect" data-num="1" ></a>
+							<a href="javascript:void(0);" class="wrong" data-key="correct" data-num="1" ></a>
+							
+						</div>
+						<div class="q">
+							<span>2. COPD is found mostly in elder people.</span>
+							<a href="javascript:void(0);" class="right" data-key="incorrect" data-num="2"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="correct" data-num="2"></a>
+							
+						</div>
+						<div class="q">
+							<span>3. If you are a non smoker, you cannot suffer from COPD.</span>
+							<a href="javascript:void(0);" class="right" data-key="correct" data-num="3"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="incorrect" data-num="3"></a>
+							
+						</div>
+						<div class="q">
+							<span>4. COPD is a chronic disease that is incurable.</span>
+							<a href="javascript:void(0);" class="right" data-key="correct" data-num="4"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="incorrect" data-num="4"></a>
+							
+						</div>
+						<div class="q">
+							<span>5. COPD is common in men.</span>
+							<a href="javascript:void(0);" class="right" data-key="incorrect" data-num="5"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="correct" data-num="5"></a>
+							
+						</div>
+						<div class="q">
+							<span>6. The only way to diagnose COPD is with a lung function test.</span>
+							<a href="javascript:void(0);" class="right" data-key="correct" data-num="6"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="incorrect" data-num="6"></a>
+							
+						</div>
+						<div class="q">
+							<span>7.  lt's too late to stop smoking once you have COPD.</span>
+							<a href="javascript:void(0);" class="right" data-key="incorrect" data-num="7"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="correct" data-num="7"></a>
+							
+						</div>
+						<div class="q">
+							<span>8. COPD patients must be careful in avoiding infections and <br /> &nbsp;&nbsp;&nbsp;&nbsp;diseases like Flu and Pneumonia.</span>
+							<a href="javascript:void(0);" class="right" data-key="correct" data-num="8"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="incorrect" data-num="8"></a>
+							
+						</div>
+						<div class="q">
+							<span>9. If you suffer from asthma, it means that you have COPD.</span>
+							<a href="javascript:void(0);" class="right" data-key="incorrect" data-num="9"></a>
+							<a href="javascript:void(0);" class="wrong" data-key="correct" data-num="9"></a>
+							
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<div class="main-nav-wrap">
+			<a href="knowing-copd.html" class="main-nav main-1 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Knowing COPD</div>
+				</div>
+			</a>
+			<a href="signs-of-copd.html" class="main-nav main-2 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Signs of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-3 " href="causes-of-copd.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Causes of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-4 active">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Take a Quiz</div>
+				</div>
+			</a>
+			<a class="main-nav main-5 " href="treatment.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Treatment</div>
+				</div>
+			</a>
+			<a class="main-nav main-6 " href="exercise.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Exercise</div>
+				</div>
+			</a>
+			<a class="main-nav main-7" href="nutrition.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Nutrition</div>
+				</div>
+			</a>
+			<a class="main-nav main-8">
+				<div class="main-nav-data">
+					<div class="close-nav-icon"></div>
+					<div class="main-nav-text">Close</div>
+				</div>
+			</a>
+		</div>
+		<div id="overlay" class="overlay" style="display:none;">
+			<div class="pop-data">
+				<div class="q-pop animated rubberBand" id="9" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>Asthma and COPD have symptoms in common- such as shortness of breath, coughing and wheezing- but they are two distinct lung diseases.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="8" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>If you have COPD, you need to take extra precautions to prevent contracting any respiratory illness, such as Flu and Pneumonia, since it adds on to the complications.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="7" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>It's never too late to quit smoking. The damage to your lungs from years of smoking can never be completely reversed, but if you quit smoking anytime it may slow the progression of COPD symptoms.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="6" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>Yes. A lung-function test, known as spirometry,can confirm if you have COPD.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="5" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>COPD is not just a man's disease. Reports from Amercian Lung Association suggest that, women are also at a high risk to get COPD.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="4" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>COPD is a chronic disease, meaning it is a long-term condition. But there have been great advances in COPD medicines which can often control symptoms and slow the progression, espically if it's diagonsed in the early stages.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="3" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>Smoking is one of the most common causes of COPD. But years of breathing second hand smoke or working in an area where you're exposed to airborne chemicals, dust & other particles can raise your risk for COPD </p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="2" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>It is true that about 3 out of 4 COPD cases are diagnosed in people above 55, but COPD can be found in people of younger age groups as well.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				<div class="q-pop animated rubberBand" id="1" style="display:none;">
+				<h5 class="text-uppercase"></h5>
+				<p>Regular exercise (Proper exercise and breathing techniques) expands lung capacity and helps relieve COPD-related fatigue.</p>
+				<a href="javscript:void(0);" onclick="$('.q-pop').removeClass('correct'); $('.q-pop').removeClass('incorrect');$('.q-pop').hide();$('#overlay').hide();" class="pop-close" ></a>
+				</div>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

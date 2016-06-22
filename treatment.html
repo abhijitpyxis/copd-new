@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/boostrap-theme.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/bootstrap.js" crossorigin="anonymous"></script>
+	</head>
+	<body id="treat">
+		
+		<div class="treat-data-wrap">
+			<div class="treat-banner"></div>
+			<div class="treat-dat">
+				<div class="treat-head-one text-uppercase">What are my</div>
+				<div class="treat-head-two text-uppercase">Treatment opions?</div>
+				<hr class="treat-hr">
+				<div class="treat-data">
+					<p>Certain lifestyle changes and treatments can help you breathe easier and slow down the progression of the disease</p>
+					<p class="treat-p">The management	of COPD consists of</p>
+					<div class="treat-left">
+						<div class="treat-left-head">
+							<div class="treat-icon"></div>
+							<h3 class="text-uppercase">Non-Medicinal</h3>
+							<span>(Diet and Lifestyle changes)</span>
+						</div>
+						<div class="treat-left-wrap">
+							<a href="javascript:void(0);" onclick="$('#overlay-quit').show();"><img src="images/treatment_icon_4.png" height="148px" /></a>
+							<a href="exercise.html" onclick="" class="treat-mid"><img src="images/treatment_icon_3.png" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-edu').show();"><img src="images/treatment_icon_2.png" height="148px" /></a>
+							<a href="nutrition.html" onclick=""><img src="images/treatment_icon_1.png" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="" class="treat-big"><img src="images/treatment_icon_5.png" width="305px" height="148px" /></a>
+						</div>
+					</div>
+					<div class="treat-right">
+						<div class="treat-right-head">
+							<div class="treat-icon"></div>
+							<h3 class="text-uppercase">Medicinal</h3>
+						</div>
+						<div class="treat-right-wrap">
+							<a href="javascript:void(0);" onclick="$('#overlay-cat').show();"><img src="images/treatment_medicinal_1.png" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-long').show();" style="margin-left:8px;"><img src="images/treatment_medicinal_2.png" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-emer').show();"><img src="images/treatment_medicinal_3.png" width="305px" height="148px" /></a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<div class="main-nav-wrap">
+			<a href="knowing-copd.html" class="main-nav main-1 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Knowing COPD</div>
+				</div>
+			</a>
+			<a href="signs-of-copd.html" class="main-nav main-2 ">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Signs of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-3 " href="causes-of-copd.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Causes of COPD</div>
+				</div>
+			</a>
+			<a class="main-nav main-4" href="quiz.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Take a Quiz</div>
+				</div>
+			</a>
+			<a class="main-nav main-5 active">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Treatment</div>
+				</div>
+			</a>
+			<a class="main-nav main-6 " href="exercise.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Exercise</div>
+				</div>
+			</a>
+			<a class="main-nav main-7" href="nutrition.html">
+				<div class="main-nav-data">
+					<div class="main-nav-icon"></div>
+					<div class="main-nav-text">Nutrition</div>
+				</div>
+			</a>
+			<a class="main-nav main-8">
+				<div class="main-nav-data">
+					<div class="close-nav-icon"></div>
+					<div class="main-nav-text">Close</div>
+				</div>
+			</a>
+		</div>
+		<div id="overlay-quit" class="overlay" style="display:none;">
+			<div class="pop-data animated zoomIn">
+				<div class="pop-wrap">
+					<img src="images/treatment_pop_5.png" />
+					<a href="javscript:void(0);" onclick="$('#overlay-quit').hide();" class="pop-close" ></a>
+					<div class="pop-links">
+						<a href="javascript:void(0);" onclick="" class="prev"><img src="images/prev-disabled.png" /></a>
+						<a href="javascript:void(0);" onclick="$('#overlay-quit').hide();$('#overlay-edu').show();" class="next"><img src="images/next.png" /></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="overlay-long" class="overlay" style="display:none;">
+			<div class="pop-data animated zoomIn">
+				<div class="pop-wrap">
+					<img src="images/treatment_pop_1.png" />
+					<a href="javscript:void(0);" onclick="$('#overlay-long').hide();" class="pop-close" ></a>
+					<div class="pop-links">
+						<a href="javascript:void(0);" onclick="$('#overlay-long').hide();$('#overlay-cat').show();" class="prev"><img src="images/prev.png" /></a>
+						<a href="javascript:void(0);" onclick="$('#overlay-long').hide();$('#overlay-emer').show();" class="next"><img src="images/next.png" /></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="overlay-cat" class="overlay" style="display:none;">
+			<div class="pop-data animated zoomIn">
+				<div class="pop-wrap">
+					<img src="images/treatment_pop_3.png" />
+					<a href="javscript:void(0);" onclick="$('#overlay-cat').hide();" class="pop-close" ></a>
+					<div class="pop-links">
+						<a href="javascript:void(0);" onclick="$('#overlay-cat').hide();$('#overlay-edu').show();" class="prev"><img src="images/prev.png" /></a>
+						<a href="javascript:void(0);" onclick="$('#overlay-cat').hide();$('#overlay-long').show();" class="next"><img src="images/next.png" /></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="overlay-emer" class="overlay" style="display:none;">
+			<div class="pop-data animated zoomIn">
+				<div class="pop-wrap">
+					<img src="images/treatment_pop_2.png" />
+					<a href="javscript:void(0);" onclick="$('#overlay-emer').hide();" class="pop-close" ></a>
+					<div class="pop-links">
+						<a href="javascript:void(0);" onclick="$('#overlay-emer').hide();$('#overlay-long').show();" class="prev"><img src="images/prev.png" /></a>
+						<a href="javascript:void(0);" onclick="$('#overlay-emer').hide();$('#overlay-quit').show();" class="next"><img src="images/next.png" /></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="overlay-edu" class="overlay" style="display:none;">
+			<div class="pop-data animated zoomIn">
+				<div class="pop-wrap">
+					<img src="images/treatment_pop_4.png" />
+					<a href="javscript:void(0);" onclick="$('#overlay-edu').hide();" class="pop-close" ></a>
+					<div class="pop-links">
+						<a href="javascript:void(0);" onclick="$('#overlay-edu').hide();$('#overlay-quit').show();" class="prev"><img src="images/prev.png" /></a>
+						<a href="javascript:void(0);" onclick="$('#overlay-edu').hide();$('#overlay-cat').show();" class="next"><img src="images/next.png" /></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
