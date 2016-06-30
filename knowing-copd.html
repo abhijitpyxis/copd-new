@@ -5,10 +5,12 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="css/boostrap-theme.css" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Latest compiled and minified JavaScript -->
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery-3.0.0.min.js"></script>
 		<script src="js/bootstrap.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -16,27 +18,26 @@
 		<div class="know-data-wrap">
 			<div class="know-banner"></div>
 			<div class="know-data">
-				<div class="know-head-one">What do i need to know about</div>
-				<div class="know-head-two">COPD?</div>
+				<div class="know-head-one animated slideInLeft">What do i need to know about</div>
+				<div class="know-head-two animated slideInLeft">COPD?</div>
 				<hr class="know-hr">
 				<div class="know-left-wrap">
-					<p>Chronic Obstructive Pulmonary Disease (COPD) is a disease of the Lungs- the organ through which we breathe.</p>
-					<p><span>C</span> for Chronic means long term<br />
+					<p class=" animated fadeInDown">Chronic Obstructive Pulmonary Disease (COPD) is a disease of the Lungs- the organ through which we breathe.</p>
+					<p class=" animated fadeInDown"><span>C</span> for Chronic means long term<br />
 	<span>O</span> for Obstructive means partially blocked<br />
 	<span>P</span> for Pulmonary means related to lungs<br />
 	<span>D</span> for Disease means illness</p>
-					<p>It is a group of diseases that cause obstruction of airflow to the lungs. It is chronic (long term) in nature, and therefore the airflow obstruction is usually permanent.</p>
+					<p class=" animated fadeInDown">It is a group of diseases that cause obstruction of airflow to the lungs. It is chronic (long term) in nature, and therefore the airflow obstruction is usually permanent.</p>
 				</div>
 				<div class="know-right-wrap">
-					<h4>What happens in COPD?</h4>
-					<img src="images/copd-vid.png" width="386px" height="242px" />
-<!--
-					<video width="386" height="242" id="video5" poster="images/copd-vid.png" preload="auto" onclick="this.play();" onclick="this.play();" controls>
-						<source src="videos/knowing-copd.mp4" type="video/mp4">
-					</video>
--->
+					<h4 class="animated slideInTop">What happens in COPD?</h4>
+					<a onclick="$('.vid-overlay').show();$('#video5').get(0).play();$('#video5').show();" class="twos fadeIn animated" ><img src="images/copd-vid.png" width="386px" height="242px" /></a>
+					
 				</div>
 			</div>
+		</div>
+		<div class="copyright">
+		Copyright&copy; 2016, Sun Pharmaceutical Industries Ltd - All Rights Reserved
 		</div>
 		<div class="main-nav-wrap">
 			<a href="knowing-copd.html" class="main-nav main-1 active">
@@ -87,6 +88,13 @@
 					<div class="main-nav-text">Close</div>
 				</div>
 			</a>
+		</div>
+		<div class="vid-overlay" style="display:none;">
+			<video width="1024px" height="768px" id="video5" class="video"  preload="auto" style="display:none;"  >
+				<source src="videos/video1.mp4" type="video/mp4">
+			</video>
+				<a onclick="$('#video5').hide();$('.vid-overlay').hide();$('#video5').get(0).pause();" class="vid-close">Close</a>
+			
 		</div>
 	</body>
 </html>

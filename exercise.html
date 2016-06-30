@@ -17,10 +17,10 @@
 		<div class="exer-data-wrap">
 			<div class="exer-banner"></div>
 			<div class="exer-dat">
-				<div class="exer-head-two text-uppercase">Exercise</div>
+				<div class="exer-head-two text-uppercase animated slideInLeft">Exercise</div>
 				<hr class="exer-hr">
 				<div class="exer-data">
-					<div class="exer-left">
+					<div class="exer-left animated slideInLeft">
 						<p>Physical activity is recommended for all COPD patients since it improves physical strength, breathing efficiency and tolerance. Your doctor will recommend both aerobic and resistance exercises. </p>
  
 						<li>Always consult your doctor before starting a COPD exercise programme. </li>
@@ -31,15 +31,19 @@
 							<h5>Precautions to be taken while you exercise</h5>
 						</a>
 					</div>
-					<div class="exer-right">
+					<div class="exer-right animated slideInRight">
 						<h6>Aerobic and Resistance exercises</h6>
-						<img src="images/exercise-vid.png" height="279px" />
+						<a onclick="$('.vid-overlay').show();$('#video5').get(0).play();$('#video5').show();" ><img src="images/exercise-vid.png" height="279px" style="margin-bottom:10px;" /></a>
+						<h6><strong>PLAY VIDEO</strong></h6>
 					</div>
 				</div>
 				
 				
 				
 			</div>
+		</div>
+		<div class="copyright">
+		Copyright&copy; 2016, Sun Pharmaceutical Industries Ltd - All Rights Reserved
 		</div>
 		<div class="main-nav-wrap">
 			<a href="knowing-copd.html" class="main-nav main-1 ">
@@ -96,6 +100,13 @@
 				<img src="images/exercise-pop.png" />
 				<a href="javscript:void(0);" onclick="$('#overlay').hide();" class="pop-close" ></a>
 			</div>
+		</div>
+		<div class="vid-overlay" style="display:none;">
+			<video width="1024px" height="768px" id="video5" class="video"  preload="auto" style="display:none;"  >
+				<source src="videos/video4.mp4" type="video/mp4">
+			</video>
+				<a onclick="$('#video5').hide();$('.vid-overlay').hide();$('#video5').get(0).pause();" class="vid-close">Close</a>
+			
 		</div>
 	</body>
 </html>

@@ -57,12 +57,13 @@ header.home-head{
 	margin-left: 10px;
 }
 .pic-nav-icon{
-	background: url(../images/small/nav-icons.png) no-repeat;
+	background: url(../images/nav-icons.png) no-repeat;
 	height: 40px;
     width: 40px;
     margin-left: 20px;
     margin-top: 10px;
     float: left;
+	background-size: 1200%;
 }
 .pic-1{
 	background: url(../images/1.png) no-repeat top center;background-size:100%;
@@ -90,7 +91,13 @@ header.home-head{
 	background: url(../images/7.png) no-repeat top center;background-size:100%;
 }
 .pic-8{
-	background: url(../images/8.png) no-repeat top center;background-size:100%;
+	    background: url(../images/home.png) no-repeat center 76px;
+    background-size: 50%;
+    background-color: #fde1ec;
+}
+.pic-8 .pic-nav-text{
+	width: 100%;
+	text-align: center;
 }
 .pic-1 .pic-nav-data,.main-1 .main-nav-data{
 	background: #139ff1;
@@ -132,54 +139,96 @@ header.home-head{
 	font-size: 15px;
 }
 .pic-1 .pic-nav-icon{
-	background-position: -105px;
+	background-position: 2px;
 }
 .pic-2 .pic-nav-icon{
-	background-position: -212px;
+	background-position: -72px 5px;
 }
 .pic-3 .pic-nav-icon{
-	background-position: -435px;
+	background-position: -222px 5px;
 }
 .pic-4 .pic-nav-icon{
-	background-position: -649px;
+	background-position: -294px 5px;
 }
 .pic-5 .pic-nav-icon{
-	background-position: 7px;
+	background-position: -445px 11px;
 }
 .pic-6 .pic-nav-icon{
-	background-position: -324px;
+	background-position: -147px 5px;
 }
 .pic-7 .pic-nav-icon{
-	background-position: -543px;
+	background-position: -370px 9px;
 }
 .pic-8 .pic-nav-icon{
 	background-position: -763px;
 }
 .main-1 .main-nav-icon{
-	background-position:;
+	background-position:-5px -8px;
+}
+.main-1.active .main-nav-icon{
+	background-position:-58px -8px;
 }
 .main-2 .main-nav-icon{
-	background-position: 0 -95px;
+	background-position:-5px -58px;
+}
+.main-2.active .main-nav-icon{
+	background-position:-58px -58px;
 }
 .main-3 .main-nav-icon{
-	background-position: 0 -190px;
+	background-position: -5px -108px;
 }
-.main-4 .main-nav-icon{
-	background-position: 0 -286px;
-}
-.main-5 .main-nav-icon{
-	background-position: 0 -388px;
-}
-.main-6 .main-nav-icon{
-	background-position: 0 -482px;
-}
-.main-7 .main-nav-icon{
-	background-position: 0 -578px;
-}
-.main-8 .main-nav-icon{
-	background-position: 0 -578px;
+.main-3.active .main-nav-icon{
+	background-position: -58px -108px;
 }
 
+.main-4 .main-nav-icon{
+	background-position: -5px -158px;
+}
+.main-4.active .main-nav-icon{
+	background-position: -58px -158px;
+}
+.main-5 .main-nav-icon{
+	background-position:-5px -208px;
+}
+.main-5.active .main-nav-icon{
+	background-position:-58px -208px;
+}
+.main-6 .main-nav-icon{
+	background-position: -5px -258px;
+}
+.main-6.active .main-nav-icon{
+	background-position: -58px -258px;
+}
+.main-7 .main-nav-icon{
+	background-position: -6px -311px;
+}
+.main-7.active .main-nav-icon{
+	background-position: -58px -311px;
+}
+.main-8 .main-nav-icon{
+	background-position: -6px -361px;
+}
+.main-1.active .main-nav-text{
+	color:#139ff1 ;
+}
+.main-2.active .main-nav-text{
+	color:#d73b4f ;
+}
+.main-3.active .main-nav-text{
+	color:#1586b2 ;
+}
+.main-4.active .main-nav-text{
+	color:#f6595f ;
+}
+.main-5.active .main-nav-text{
+	color:#2b9279 ;
+}
+.main-6.active .main-nav-text{
+	color:#ee6e2b ;
+}
+.main-7.active .main-nav-text{
+	color:#36c349 ;
+}
 .main-nav-wrap{
 	width:156px;
 	float: right;
@@ -191,9 +240,10 @@ header.home-head{
 	text-align: center;
 }
 a.active .main-nav-data{
-	box-shadow: inset 0 0 13px #303030;
+	background: #fff;
 	border-right-color: #fff;
 }
+
 .main-nav-data{
 	width: 100%;
 	height:100%;
@@ -210,17 +260,20 @@ a.active .main-nav-data{
 	clear: left;
 }
 .main-nav-icon{
-	background: url(../images/small/side-nav-small.png) no-repeat;
+	background: url(../images/nav-icns.png) no-repeat;
+	background-size: 256%;
 	height: 40px;
     width: 40px;
 	margin: 0 auto;
 }
 .close-nav-icon{
-	background: url(../images/small/side-nav-small.png) no-repeat;
+	background: url(../images/nav-icns.png) no-repeat;
+	
+	background-size: 256%;
 	height: 40px;
     width: 40px;
 	margin: 0 auto;
-	background-position: 0 -678px;
+	background-position:  -6px -361px;
 }
 .overlay {
     position: absolute;
@@ -256,6 +309,7 @@ a.active .main-nav-data{
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1.5s;
 }
 .know-head-two{
 	font-weight: bold;
@@ -263,6 +317,14 @@ a.active .main-nav-data{
 	color:#139ff1;
 	line-height: 52px;
 	width:100%;
+	-webkit-animation-duration:1s;
+}
+.twos{
+	animation-duration:3s !important;
+}
+.threes{
+	animation-duration:2s !important;
+	animation-delay: 2s !important;
 }
 .know-left-wrap {
         float: left;
@@ -325,6 +387,8 @@ p.signs-text {
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1.5s;
+	
 }
 .signs-head-two{
 	font-weight: bold;
@@ -332,6 +396,7 @@ p.signs-text {
 	color:#d73b4f;
 	line-height: 52px;
 	width:100%;
+	-webkit-animation-duration:1s;
 }
 .signs-hr{
 	border-color: #d73b4f;
@@ -429,6 +494,7 @@ p.signs-text {
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1.5s;
 }
 .causes-head-two{
 	font-weight: bold;
@@ -436,6 +502,7 @@ p.signs-text {
 	color:#1586b2;
 	line-height: 52px;
 	width:100%;
+	-webkit-animation-duration:1s;
 }
 .causes-hr{
 	border-color: #1586b2;
@@ -606,13 +673,14 @@ img.exer-icon {
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1.5s;
 }
 .treat-head-two{
 	font-weight: bold;
 	font-size: 52px;;
 	color:#2b9279;
 	line-height: 52px;
-	width:100%;
+	width:100%;	-webkit-animation-duration:1s;
 }
 .treat-hr{
 	border-color: #2b9279;
@@ -641,6 +709,7 @@ img.exer-icon {
     margin-left: 10px;
     float: left;
 	background: url(../images/treatment-icons.png) no-repeat left center;
+	background-size: 231%;
 }
 .treat-right-head .treat-icon{
 	       height: 86px;
@@ -648,7 +717,8 @@ img.exer-icon {
     margin-left: 10px;
     float: left;
     margin-right: 10px;
-	background: url(../images/treatment-icons.png) no-repeat right center;
+	background: url(../images/treatment-icons.png) no-repeat -53px center;
+	background-size: 157%;
 }
 .treat-left-head {
     
@@ -795,6 +865,7 @@ a.treat-big {
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1.5s;
 }
 .quiz-head-two{
 	font-weight: bold;
@@ -802,6 +873,7 @@ a.treat-big {
 	color:#f6595f;
 	line-height: 52px;
 	width:100%;
+	-webkit-animation-duration:1s;
 }
 .quiz-hr{
 	border-color: #f6595f;
@@ -842,6 +914,7 @@ a.wrong {
 	display: block;
 	min-width: 438px;
 	padding-top: 7px;
+	margin-right: 45px;
 }
 .q-pop{
 	    width: 659px;
@@ -851,9 +924,11 @@ a.wrong {
 }
 .q-pop.incorrect{
 	background: url(../images/in-bg.png) no-repeat;
+	background-size:100%;
 }
 .q-pop.correct{
 	background: url(../images/ri-bg.png) no-repeat;
+	background-size:100%;
 }
 .q-pop h5.text-uppercase {
     font-weight: bold;
@@ -914,6 +989,7 @@ a.wrong {
 	width:100%;
 	line-height: 26px;
 	text-transform: uppercase;
+	-webkit-animation-duration:1s;
 }
 .nut-head-one{
 	font-weight: bold;
@@ -921,6 +997,7 @@ a.wrong {
 	color:#36c349;
 	line-height: 52px;
 	width:100%;
+	-webkit-animation-duration:1.5s;
 }
 .nut-hr{
 	border-color: #36c349;
@@ -1060,16 +1137,20 @@ hr.tip-hr {
 	
 }
 .under-pop-data .tip-q span.right{
-	background: url(../images/t-t.png) left top;
+	background: url(../images/tic-tac.png) left top;
+	background-size:253%;
 }
 .under-pop-data .tip-q span.right.selected{
-	background: url(../images/t-t.png) left bottom;
+	background: url(../images/tic-tac.png) left bottom;
+	background-size:253%;
 }
 .under-pop-data .tip-q span.wrong{
-	background: url(../images/t-t.png) right top;
+	background: url(../images/tic-tac.png) right top;
+	background-size:253%;
 }
 .under-pop-data .tip-q span.wrong.selected{
-	background: url(../images/t-t.png) right bottom;
+	background: url(../images/tic-tac.png) right bottom;
+	background-size:253%;
 }
 a.tip-pop-close {
     display: block;
@@ -1098,4 +1179,43 @@ a.tip-pop-close {
 
 .helpful-tips li {
     list-style: disc;
+}
+.vid-overlay{
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	top:0;
+	left: 0;
+	z-index: 10;
+		background:#000;
+}
+.vid-close{
+	       display: block;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #303030;
+    cursor: pointer;
+    z-index: 9;
+    padding: 10px;
+}
+.quiz-head p {
+    float: left;
+    width: 438px;
+}
+
+.quiz-head h4 {
+    text-transform: uppercase;
+    color: #f6595f;
+    width: 164px;
+    text-align: center;
+    margin: 0;
+    float: left;
+	font-weight: bold;
+}
+.copyright{
+	    position: absolute;
+    top: 748px;
+    left: 40px;
 }

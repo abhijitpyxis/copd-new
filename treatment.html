@@ -17,8 +17,8 @@
 		<div class="treat-data-wrap">
 			<div class="treat-banner"></div>
 			<div class="treat-dat">
-				<div class="treat-head-one text-uppercase">What are my</div>
-				<div class="treat-head-two text-uppercase">Treatment opions?</div>
+				<div class="treat-head-one text-uppercase animated slideInLeft">What are my</div>
+				<div class="treat-head-two text-uppercase animated slideInLeft">Treatment opions?</div>
 				<hr class="treat-hr">
 				<div class="treat-data">
 					<p>Certain lifestyle changes and treatments can help you breathe easier and slow down the progression of the disease</p>
@@ -30,11 +30,11 @@
 							<span>(Diet and Lifestyle changes)</span>
 						</div>
 						<div class="treat-left-wrap">
-							<a href="javascript:void(0);" onclick="$('#overlay-quit').show();"><img src="images/treatment_icon_4.png" height="148px" /></a>
-							<a href="exercise.html" onclick="" class="treat-mid"><img src="images/treatment_icon_3.png" height="148px" /></a>
-							<a href="javascript:void(0);" onclick="$('#overlay-edu').show();"><img src="images/treatment_icon_2.png" height="148px" /></a>
-							<a href="nutrition.html" onclick=""><img src="images/treatment_icon_1.png" height="148px" /></a>
-							<a href="javascript:void(0);" onclick="" class="treat-big"><img src="images/treatment_icon_5.png" width="305px" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-quit').show();"><img src="images/treatment_icon_4.png" height="148px"  class="animated bounce" /></a>
+							<a href="exercise.html" onclick="" class="treat-mid"><img src="images/treatment_icon_3.png" height="148px" class="animated bounce" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-edu').show();"><img src="images/treatment_icon_2.png" height="148px"  class="animated bounce" /></a>
+							<a href="nutrition.html" onclick=""><img src="images/treatment_icon_1.png" height="148px" class="animated bounce" /></a>
+							<a  onclick="$('.vid-overlay').show();$('#video5').get(0).play();$('#video5').show();"  class="treat-big"><img src="images/treatment_icon_5.png" width="305px" height="148px"  class="pulse animated infinite " /></a>
 						</div>
 					</div>
 					<div class="treat-right">
@@ -43,9 +43,9 @@
 							<h3 class="text-uppercase">Medicinal</h3>
 						</div>
 						<div class="treat-right-wrap">
-							<a href="javascript:void(0);" onclick="$('#overlay-cat').show();"><img src="images/treatment_medicinal_1.png" height="148px" /></a>
-							<a href="javascript:void(0);" onclick="$('#overlay-long').show();" style="margin-left:8px;"><img src="images/treatment_medicinal_2.png" height="148px" /></a>
-							<a href="javascript:void(0);" onclick="$('#overlay-emer').show();"><img src="images/treatment_medicinal_3.png" width="305px" height="148px" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-cat').show();"><img src="images/treatment_medicinal_1.png" height="148px"  class="animated bounce" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-long').show();" style="margin-left:8px;"><img src="images/treatment_medicinal_2.png" height="148px"  class="animated bounce" /></a>
+							<a href="javascript:void(0);" onclick="$('#overlay-emer').show();"><img src="images/treatment_medicinal_3.png" class="animated bounce" width="305px" height="148px" /></a>
 						</div>
 					</div>
 				</div>
@@ -104,10 +104,13 @@
 				</div>
 			</a>
 		</div>
+		<div class="copyright">
+		Copyright&copy; 2016, Sun Pharmaceutical Industries Ltd - All Rights Reserved
+		</div>
 		<div id="overlay-quit" class="overlay" style="display:none;">
 			<div class="pop-data animated zoomIn">
 				<div class="pop-wrap">
-					<img src="images/treatment_pop_5.png" />
+					<img src="images/small/treatment_pop_5.png" srcset="images/treatment_pop_5.png 2000w" />
 					<a href="javscript:void(0);" onclick="$('#overlay-quit').hide();" class="pop-close" ></a>
 					<div class="pop-links">
 						<a href="javascript:void(0);" onclick="" class="prev"><img src="images/prev-disabled.png" /></a>
@@ -120,7 +123,7 @@
 		<div id="overlay-long" class="overlay" style="display:none;">
 			<div class="pop-data animated zoomIn">
 				<div class="pop-wrap">
-					<img src="images/treatment_pop_1.png" />
+					<img src="images/small/treatment_pop_1.png" srcset="images/treatment_pop_1.png 2000w" />
 					<a href="javscript:void(0);" onclick="$('#overlay-long').hide();" class="pop-close" ></a>
 					<div class="pop-links">
 						<a href="javascript:void(0);" onclick="$('#overlay-long').hide();$('#overlay-cat').show();" class="prev"><img src="images/prev.png" /></a>
@@ -133,7 +136,7 @@
 		<div id="overlay-cat" class="overlay" style="display:none;">
 			<div class="pop-data animated zoomIn">
 				<div class="pop-wrap">
-					<img src="images/treatment_pop_3.png" />
+					<img src="images/small/treatment_pop_3.png" srcset="images/treatment_pop_3.png 2000w" />
 					<a href="javscript:void(0);" onclick="$('#overlay-cat').hide();" class="pop-close" ></a>
 					<div class="pop-links">
 						<a href="javascript:void(0);" onclick="$('#overlay-cat').hide();$('#overlay-edu').show();" class="prev"><img src="images/prev.png" /></a>
@@ -146,7 +149,7 @@
 		<div id="overlay-emer" class="overlay" style="display:none;">
 			<div class="pop-data animated zoomIn">
 				<div class="pop-wrap">
-					<img src="images/treatment_pop_2.png" />
+					<img src="images/small/treatment_pop_2.png"  srcset="images/treatment_pop_2.png 2000w" />
 					<a href="javscript:void(0);" onclick="$('#overlay-emer').hide();" class="pop-close" ></a>
 					<div class="pop-links">
 						<a href="javascript:void(0);" onclick="$('#overlay-emer').hide();$('#overlay-long').show();" class="prev"><img src="images/prev.png" /></a>
@@ -159,7 +162,7 @@
 		<div id="overlay-edu" class="overlay" style="display:none;">
 			<div class="pop-data animated zoomIn">
 				<div class="pop-wrap">
-					<img src="images/treatment_pop_4.png" />
+					<img src="images/small/treatment_pop_4.png" srcset="images/treatment_pop_4.png 2000w" />
 					<a href="javscript:void(0);" onclick="$('#overlay-edu').hide();" class="pop-close" ></a>
 					<div class="pop-links">
 						<a href="javascript:void(0);" onclick="$('#overlay-edu').hide();$('#overlay-quit').show();" class="prev"><img src="images/prev.png" /></a>
@@ -168,6 +171,13 @@
 				</div>
 				
 			</div>
+		</div>
+		<div class="vid-overlay" style="display:none;">
+			<video width="1024px" height="768px" id="video5" class="video"  preload="auto" style="display:none;"  >
+				<source src="videos/video3.mp4" type="video/mp4">
+			</video>
+				<a onclick="$('#video5').hide();$('.vid-overlay').hide();$('#video5').get(0).pause();" class="vid-close">Close</a>
+			
 		</div>
 	</body>
 </html>

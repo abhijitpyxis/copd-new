@@ -17,30 +17,30 @@
 		<div class="nut-data-wrap">
 			<div class="nut-banner"></div>
 			<div class="nut-dat">
-				<div class="nut-head-one text-uppercase">Nutrition</div>
-				<div class="nut-head-two text-uppercase">for COPD patients</div>
+				<div class="nut-head-one text-uppercase animated slideInLeft">Nutrition</div>
+				<div class="nut-head-two text-uppercase animated slideInLeft">for COPD patients</div>
 				<hr class="nut-hr">
 				<div class="nut-data">
-					<p>
+					<p class="animated fadeIn">
 					Your body uses food as fuel for all of its activities. No single food will supply all the nutrients you need - a healthy diet has lots of variety. For patients with COPD and other chronic lung conditions, maintaining a healthy	lifestyle is the key for managing their condition	and improving symptoms. Moderate exercise along with following a healthy diet will help reduce the tenderness.
 					</p>
 					<div class="nut-left">
 						<img src="images/nutrition_1.png" height="150px" />
 						<h3 class="text-uppercase">Nutrition Concerns</h3>
-						<li>Malnutrition (lack of proper nutrition)</li>
-						<li>Weight gain or weight loss</li>
-						<li>Nutrient quality of food</li>
-						<li>Coping with COPD symptoms</li>
+						<li class="animated fadeInDown">Malnutrition (lack of proper nutrition)</li>
+						<li class="animated fadeInDown">Weight gain or weight loss</li>
+						<li class="animated fadeInDown">Nutrient quality of food</li>
+						<li class="animated fadeInDown">Coping with COPD symptoms</li>
 					</div>
 					<div class="nut-right">
 						<img src="images/nutrition_2.png" height="150px" />
 						<h3 class="text-uppercase">Tips for eating</h3>
-						<li><a href="javascript:void(0);" onclick="$('#overlay').show();">DO'S</li>
-						<li><a href="javascript:void(0);" onclick="$('#overlay').show();">DONT'S</li>
+						<li><a href="javascript:void(0);" onclick="$('#overlay').show();" class="animated fadeInDown">DO'S</li>
+						<li><a href="javascript:void(0);" onclick="$('#overlay').show();" class="animated fadeInDown">DONT'S</li>
 					</div>
 					<div class="nut-link">
 						<a href="javascript:void(0)" onclick="$('#nut-tip').show();">
-							<img src="images/nutrition_3.png"  />
+							<img src="images/nutrition_3.png" class="animated pulse infinite"  />
 						</a>
 					</div>
 				</div>
@@ -63,6 +63,9 @@
 			</div>
 		</div>
 		
+		<div class="copyright">
+		Copyright&copy; 2016, Sun Pharmaceutical Industries Ltd - All Rights Reserved
+		</div>
 		<div class="main-nav-wrap">
 			<a href="knowing-copd.html" class="main-nav main-1 ">
 				<div class="main-nav-data">
@@ -115,13 +118,13 @@
 		</div>
 		<div id="overlay" class="overlay" style="display:none;">
 			<div class="pop-data">
-				<img src="images/tips_eating.png" />
+				<img src="images/tips_eating.png"  srcset="images/tips_eating.png 2000w" />
 				<a href="javscript:void(0);" onclick="$('#overlay').hide();" class="pop-close" ></a>
 			</div>
 		</div>
 		<div id="under-overlay" class="overlay" style="display:none;">
 			<div class="under-pop-data">
-				<img src="images/under.png" />
+				<img src="images/small/under.png" srcset="images/under.png 2000w" />
 				<hr class="tip-hr">
 				<div class="tip-q">
 					<span class="tic-tac right " data-key="right"></span>
@@ -160,7 +163,7 @@
 		</div>
 		<div id="over-overlay" class="overlay" style="display:none;">
 			<div class="under-pop-data">
-				<img src="images/over.png" />
+				<img src="images/small/over.png" srcset="images/over.png 2000w" />
 				<hr class="tip-hr">
 				<div class="tip-q">
 					<span class="tic-tac right " data-key="right"></span>

@@ -17,22 +17,22 @@
 		<div class="causes-data-wrap">
 			<div class="causes-banner"></div>
 			<div class="causes-dat">
-				<div class="causes-head-one">What causes</div>
-				<div class="causes-head-two">COPD?</div>
+				<div class="causes-head-one slideInLeft animated">What causes</div>
+				<div class="causes-head-two slideInLeft animated">COPD?</div>
 				<hr class="causes-hr">
 				<div class="causes-data">
 					<p>Exposure to lung irritants<br />
 Breathing substances which irritate the lungs like kitchen  smoke, chemical fumes and dust.</p>
 					<div class="causes-images">
-						<img src="images/cause-icons.png" class="cause-img-1" height="247px" />
-						<img src="images/cause-vid.png" width="391px" height="230px" />
+						<img src="images/cause-icons.png" class="cause-img-1 animated slideInLeft" height="247px" />
+						<a onclick="$('.vid-overlay').show();$('#video5').get(0).play();$('#video5').show();" class=""><img class=" animated slideInRight" src="images/cause-vid.png" width="391px" height="230px" /></a>
 <!--
 						<video width="391px" height="230px" id="video5" poster="images/cause-vid.png" preload="auto" onclick="this.play();" controls >
 						<source src="videos/smoking-damage.mp4" type="video/mp4">
 					</video>
 -->
 					</div>
-					<p>Mosquito coils used in homes to get rid of mosquitoes are another source of exposure in Indian homes. <br/>
+					<p class="animated fadeInTop twos">Mosquito coils used in homes to get rid of mosquitoes are another source of exposure in Indian homes. <br/>
 					Burning a single mosquito coil emits particulate matter equivalent to the amount emitted by a 100 cigarettes.
 					<br />
 					<span class="small">(Source; J Assoc Physicians India. 2012 Feb, 60 suppl; 5-7, Environ health perspect. 2003, 111; 1454-1460)</span>.</p>
@@ -42,6 +42,9 @@ Breathing substances which irritate the lungs like kitchen  smoke, chemical fume
 				
 				
 			</div>
+		</div>
+		<div class="copyright">
+		Copyright&copy; 2016, Sun Pharmaceutical Industries Ltd - All Rights Reserved
 		</div>
 		<div class="main-nav-wrap">
 			<a href="knowing-copd.html" class="main-nav main-1 ">
@@ -98,6 +101,13 @@ Breathing substances which irritate the lungs like kitchen  smoke, chemical fume
 				<img src="images/copd-pop.png" />
 				<a href="javscript:void(0);" onclick="$('#overlay').hide();" class="pop-close" ></a>
 			</div>
+		</div>
+		<div class="vid-overlay" style="display:none;">
+			<video width="1024px" height="768px" id="video5" class="video"  preload="auto" style="display:none;"  >
+				<source src="videos/video2.mp4" type="video/mp4">
+			</video>
+				<a onclick="$('#video5').hide();$('.vid-overlay').hide();$('#video5').get(0).pause();" class="vid-close">Close</a>
+			
 		</div>
 	</body>
 </html>
